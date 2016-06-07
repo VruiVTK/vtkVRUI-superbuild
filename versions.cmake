@@ -1,5 +1,15 @@
+superbuild_set_revision(geometryviewer
+  GIT_REPOSITORY "https://github.com/VruiVTK/GeometryViewer.git"
+  GIT_TAG "master"
+)
+
 superbuild_set_revision(mooseviewer
   GIT_REPOSITORY "https://github.com/VruiVTK/MooseViewer.git"
+  GIT_TAG "master"
+)
+
+superbuild_set_revision(volumeviewer
+  GIT_REPOSITORY "https://github.com/VruiVTK/VolumeViewer.git"
   GIT_TAG "master"
 )
 

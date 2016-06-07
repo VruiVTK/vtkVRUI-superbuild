@@ -4,8 +4,10 @@ project(vtkvrui-superbuild)
 
 function(superbuild_find_projects var)
   set(projects
+    geometryviewer
     mooseviewer
     tbb
+    volumeviewer
     vrui
     vtk
     vtkvrui
