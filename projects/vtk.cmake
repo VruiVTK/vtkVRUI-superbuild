@@ -1,3 +1,13 @@
+set(VTK_RENDERING_BACKEND "OpenGL2"
+  CACHE STRING "Rendering backend for VTK."
+)
+
+set_property(CACHE VTK_RENDERING_BACKEND
+  PROPERTY STRINGS
+    OpenGL
+    OpenGL2
+)
+
 superbuild_add_project(vtk
   DEBUGGABLE
   DEFAULT_ON
@@ -8,7 +18,7 @@ superbuild_add_project(vtk
     "-DBUILD_SHARED_LIBS:BOOL=OFF"
     "-DBUILD_EXAMPLES:BOOL=OFF"
     "-DModule_vtkRenderingExternal:BOOL=ON"
-    "-DVTK_RENDERING_BACKEND:STRING=OpenGL2"
+    "-DVTK_RENDERING_BACKEND:STRING=${VTK_RENDERING_BACKEND}"
     "-DVTK_SMP_IMPLEMENTATION_TYPE:STRING=TBB"
     "-DTBB_ROOT:PATH=<INSTALL_DIR>"
 )
