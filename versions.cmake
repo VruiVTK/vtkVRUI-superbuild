@@ -14,8 +14,8 @@ superbuild_set_revision(volumeviewer
 )
 
 superbuild_set_revision(vrui
-  URL "http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Vrui-3.1-002.tar.gz"
-  URL_HASH SHA1=3c4ded4ed18e4a16394cdc1d625d7d0f4f84b108
+  URL "http://idav.ucdavis.edu/~okreylos/ResDev/Vrui/Vrui-4.2-006.tar.gz"
+  URL_HASH SHA1=8fc967fe33ac5fc200240c82775c427796d8a9a3
 )
 
 superbuild_set_revision(vtk
